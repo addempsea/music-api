@@ -1,0 +1,8 @@
+{
+  "dev": {
+    "ENV": "MUSICPLAYERAPI_DATABASE_URL"
+  },
+  "test": {
+    "ENV": "MUSICPLAYERAPI_TEST_DATABASE_URL"
+  }
+}
