@@ -1,11 +1,8 @@
 import { Router } from 'express';
-// import admin from '../../routes/admin';
-
-
+import songs from '../../routes/songs';
 
 const api = Router();
 
-// api.use('/admin', admin);
-
+api.use('/songs', songs);
 
 export default api;

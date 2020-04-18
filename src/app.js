@@ -1,8 +1,8 @@
-import "dotenv/config";
-import { db } from "./db";
-import app from "./config/express";
+import 'dotenv/config';
+import { db } from './db';
+import app from './config/express';
 
-const port = process.env.port || 3000;
+const port = process.env.port || 3001;
 
 db.connect()
   .then((obj) => {

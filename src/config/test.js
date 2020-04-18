@@ -1,4 +1,4 @@
-import "dotenv/config";
+import 'dotenv/config';
 
 const { MUSICPLAYERAPI_TEST_DATABASE_URL, SECRET } = process.env;
 export default {

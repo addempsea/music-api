@@ -1,5 +1,5 @@
-import * as Response from "./response";
-import Validate from "./validate";
-import Hash from "./hash"
+import * as Response from './response';
+import Validate from './validate';
+import Hash from './hash';
 
-export { Response, Validate , Hash};
+export { Response, Validate, Hash };
