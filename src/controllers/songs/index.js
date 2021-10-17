@@ -52,6 +52,19 @@ const getSongByYear = async(req, res) => {
   }
 };
 
+const getSongByArtist = async(req, res) => {
+  try {
+    console.log(req.headers)
+    const { artist } = req.params;
+    const songs = await songServices.getSongByArtist(artist);
+    return songs ?
+      Response.successResponse(res, songs, 'Successfully returned ') :
+      Response.serverError(res, 'Error Getting Song.');
+  } catch (error) {
+    return Response.serverError(res, 'Internal Server Error.');
+  }
+};
+
 export {
-  uploadSong, getSongs, getSongById, getSongByYear,
+  uploadSong, getSongs, getSongById, getSongByYear, getSongByArtist,
 };

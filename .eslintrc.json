@@ -15,7 +15,7 @@
   },
   "rules": {
     "arrow-body-style": "error",
-    "camelcase": "off",
+    "camelcase": "on",
     "dot-notation": "error",
     "array-bracket-spacing": ["error", "always"],
     "comma-dangle": "error",
